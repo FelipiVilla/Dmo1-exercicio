@@ -37,7 +37,7 @@
         app:srcCompat="@drawable/borda" />
 
     <ImageView
-        android:id="@+id/bandeira_brasil"
+        android:id="@+id/img_entrada"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@+id/borda"
@@ -49,7 +49,7 @@
         app:srcCompat="@drawable/bandeira_brasil" />
 
     <ImageView
-        android:id="@+id/bandeira_eua"
+        android:id="@+id/img_saida"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@+id/borda"
@@ -65,6 +65,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="->"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/borda"
         app:layout_constraintEnd_toEndOf="@+id/borda"
         app:layout_constraintStart_toStartOf="@+id/borda"
@@ -111,5 +112,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_calcular"
         app:layout_constraintVertical_bias="0.471" />
+
+    <Button
+        android:id="@+id/trocar_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alterar"
+        app:layout_constraintBottom_toTopOf="@+id/img_saida"
+        app:layout_constraintEnd_toEndOf="@+id/borda"
+        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintStart_toStartOf="@+id/borda"
+        app:layout_constraintTop_toTopOf="@+id/borda"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/esquerda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alterar"
+        app:layout_constraintBottom_toTopOf="@+id/img_saida"
+        app:layout_constraintEnd_toEndOf="@+id/borda"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="@+id/borda"
+        app:layout_constraintTop_toTopOf="@+id/borda"
+        app:layout_constraintVertical_bias="0.75" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
